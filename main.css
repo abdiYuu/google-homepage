@@ -65,12 +65,13 @@ svg {
 }
 
 #logo {
+	padding-top:15%;
 	display:block;
 	margin:auto;
 }
 
 #search-bar {
-	width:45%;
+	width:548px;
 	border-radius:10px;
 	height:2em;
 	display:block;
@@ -110,12 +111,13 @@ footer {
 
 #location {
 	padding: 15px 30px 15px 30px;
-	font-size:15px;
+	font-size:1em;
 }
 
-#hotlinks {
+#hotlinks  {
 	display:flex;
 	justify-content:space-between;
+	font-size:1em;
 }
 
 #bottom-right, #bottom-left {
@@ -123,9 +125,16 @@ footer {
 	margin 15px 0;
 }
 
-@media only screen and (max-width:600px) {
-	#search-bar {
-		width:90%;
-	}
+#bottom-right > a, #bottom-left > a {
+	text-decoration:none;
+}
 
+@media only screen and (max-width: 700px) {
+	#search-bar {
+		width:70%;
+	}
+	#bottom-left > a, #bottom-right > a {
+		display:block;
+		padding:3px 0:
+	}
 }
