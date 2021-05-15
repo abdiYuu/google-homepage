@@ -9,49 +9,46 @@ body {
 }
 
 nav {
-	display:grid;
-	grid-template-rows:1fr;
-	grid-template-columns:20% 20% 20% 20% 20%;
-	margin-top:2%;
+	display:flex;
 	font-size:14px;
-	margin:2%;
+	align-items:center;
+	padding:6px;
+	width:100%;
+	justify-content:space-between;
 }
 
 
-nav > a {
+#nav-left > a, #nav-right > a {
 	text-decoration:none;
 	color:black;
 	font-family:'Roboto',sans-serif;
 }
 
-a:first-child, a:nth-child(2) {
-	grid-row:1;
-	grid-column:1;
+#nav-left {
+	margin-left:15px;
+
 }
 
-a:nth-child(2) {
-	margin-left:4em;
+#nav-left > a:nth-child(2) {
+	display:inline-block;
+	padding:5px;
+	margin-left:8px;
 }
 
-a:nth-child(3), a:nth-child(4) {
-	grid-row:1;
-	grid-column:4;
-	justify-self:end;
+#nav-right {
+	margin-right:15px;
 }
 
-a:nth-child(3) {
-	margin-right:6em;
+#nav-right > a:nth-child(2) {
+	display:inline-block;
+	padding:5px;
 }
 
-a:nth-child(4) {
-	margin-right:2em;
-}
-
-
-
-nav > svg, button {
-	grid-row:1;
-	grid-column:5;
+svg {
+	height:25px;
+	width:25px;
+	padding-top:5px;
+	padding-right:3px;
 }
 
 #login {
@@ -61,19 +58,10 @@ nav > svg, button {
 	border-radius:4px;
 	border:2px solid transparent;
 	color:white;
-	justify-self:end;
 }
 
 #login:hover {
 	background:#2b7de9;
-}
-
-#logo-space {
-	width:45%;
-	margin:auto;
-	margin-top:15%;
-	margin-bottom:2%;
-
 }
 
 #logo {
@@ -133,4 +121,11 @@ footer {
 #bottom-right, #bottom-left {
 	padding:0 20px;
 	margin 15px 0;
+}
+
+@media only screen and (max-width:600px) {
+	#search-bar {
+		width:90%;
+	}
+
 }
