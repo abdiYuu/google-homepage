@@ -26,13 +26,29 @@ div > a {
 }
 
 #logo-space {
-	width:50%;
-	margin:auto;
 	margin-top:20%;
+	margin-bottom:2%;
+}
+
+#logo {
+	display:block;
+	margin:auto;
 }
 
 #search-bar {
 	width:50%;
 	border-radius:10px;
 	height:2em;
+	display:block;
+	margin:auto;
+}
+
+#buttons {
+	margin-top:1%;
+	display:flex;
+	justify-content:center;
+}
+
+#buttons > button {
+	margin:1%
 }
